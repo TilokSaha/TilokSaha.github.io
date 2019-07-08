@@ -1,82 +1,66 @@
-.welcome-section{
-  text-align: center;
-  background-color: lightgreen;
-  min-height: 55vh;
-  padding-top:45vh;
-  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
-  border-radius: 10px;
+.container-fluid{
+  margin: 0;
+  padding: 0;
 }
-.projects{
-  text-align: center;
-  min-height: 95vh;
-  background-color: lightblue;
-  padding-top:5vh;
-  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
-  border-radius: 10px;
+.nav-link{
+  color: white!important;
 }
-img{
-  width: 100%;
+body{
+  background-color: #e1e1e1;
 }
-.project-tile{
-  height: 180px;
-  width: 280px;
-  align-self: center;
-  margin: 20px 30px 30px 0px;
-  border: 2px solid #377ff2;
-  border-radius: 10px;
-  padding: 5px 5px;
-  background-color: #46cff2;
-  display: inline-block;
-  transition: 0.5s;
-  box-shadow: 5px 5px 5px 6px rgba(0,0,0,0.2),2px 2px 8px 2px rgba(0,0,0,0.65);
+.bg-light {
+    background-color: #222!important;
 }
-.project-tile:hover{
-  transform: scale(1.15);
+.navbar-brand{
+  font-size: 300%;
 }
-.caption{
-  margin-top: -30px;
-  font-weight: bold;
+footer{
+  background-color: #222!important;
+  color: gray;
+  position: relative;
 }
-#footer{
-  min-height: 55vh;
-  padding-top: 45vh;
-  background-color: lightpink;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
-  margin-top: 15px;
+.jumbotron{
+  position: relative;
+  margin-top:150px;
+  background: url(img/tiger.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: rusty;
+  height: 350px;
+  /* color: white; */
 }
-.circle{
-  height: 100px;
-  width: 100px;
-  display: inline-block;
-  margin-left: 15vw;
-  margin-bottom: 12vw;
-  border-radius: 50%;
+@font-face {
+  font-family: rusty;
+  src:url(fonts/Rusty.ttf);
+}
+@font-face {
+  font-family: jam;
+  src:url(fonts/CherryJam.ttf);
+}
+.article{
+  margin: 20px;
   background-color: #f1f1f1;
-  border: 1px solid gray;
-  text-align: center;
-  line-height: 100px;
-  text-decoration: none;
-  color: green;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 3px rgba(0,0,0,0.3), 5px 5px 5px 3px rgba(0,0,0,0.2);
+  /* border: 1px solid black; */
 }
-.circle:hover{
-  background-color: #ddd;
+.pic-quote{
+  font-size: 0.8em;
+  opacity: 0.8;
 }
-h1{
-  font-family: 'Indie Flower', cursive;
+.headings{
+  font-family: jam;
+  margin: 75px;
 }
-p{
-  font-family: 'Indie Flower', cursive;
-  font-size: 150%;
+a{
+  color: gray;
 }
-#footer h1{
-  text-align: center;
-  margin-top: -50px;
-  padding-bottom: 50px;
+.icon-3x{
+  font-size: 40px!important;
+  transition: 0.2s;
 }
-@media screen and (min-width: 800px) {
-  .project-tile{
-    margin: 15vh 5vw 0px 5px;
-  }
-
+i:hover{
+  font-size: 60px!important;
+  
 }

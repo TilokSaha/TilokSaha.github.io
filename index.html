@@ -4,53 +4,126 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+  <title>Document</title>
 </head>
 <body>
-<div class="welcome-section">
-  <h1>My name is Tilok Saha.</h1>
-  <p>I m a web developer.</p>
-</div>
-<div class="projects">
-  <h1>My Projects</h1>
-  <div class="project-tile">
-  <div class="image">
-  <a id="profile-link" href="https://codepen.io/TilokSaha/pen/dLbewx" target="_blank">
-    <img src="https://user-images.githubusercontent.com/35939367/55471305-0fc82900-5627-11e9-9257-3f52e9500c94.png" alt="pic1">
-  </a>
+  <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
+    <a class="navbar-brand" href="#">MyDoc</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+    </div>
+    <div class="jumbotron text-center img-fluid ">
+      <h1 class="display-3">Save <span class="type"></span></h1>
+    </div>
+    <h1 class="display-1 text-center headings">FACTS</h1>
+    <div class="article row" >
+      <div class="section col-xm-6 col-sm-6 text-center align-self-center" data-aos="fade-right" data-aos-duration="1000">
+        The Bengal tiger is found primarily in India with smaller populations in Bangladesh, Nepal, Bhutan, China and Myanmar. It is the most numerous of all tiger subspecies with more than 2,500 left in the wild. The creation of India’s tiger reserves in the 1970s helped to stabilize numbers, but poaching to meet a growing demand from Asia in recent years has once again put the Bengal tiger at risk. The mangroves of the Sundarbans—shared between Bangladesh and India—are the only mangrove forests where tigers are found. The Sundarbans are increasingly threatened by sea level rise as a result of climate change.
+      </div>
+      <div class="image col-xm-6 col-sm-6 align-self-center img-thumbnail" data-aos="fade-left" data-aos-duration="1000">
+      <img class="img-thumbnail" src="img/Machli.jpg" alt="">
+      <p class="pic-quote text-center"><em>Picture here shown is Machali Tigress who was the Queen of Ranthambore National Park</em></p>
+    </div>
+    </div>
+    <h1 class="display-1 text-center headings">WHY THEY MATTER</h1>
+
+    <div class="article row">
+      <div class="image col-xm-6 col-sm-6 align-self-center img-thumbnail" data-aos="fade-right" data-aos-duration="1000">
+      <img class="img-thumbnail" src="img/tiger2.jpg" alt="">
+
+    </div>
+      <div class="section col-xm-6 col-sm-6 text-center align-self-center" data-aos="fade-left" data-aos-duration="1000">
+         This tiger subspecies is at the top of the food chain in the wild. But tigers are also a vital link in maintaining the rich diversity of nature. When tigers are protected, we save so much more. For example, with just one tiger, we protect around 25,000 acres of forest. These ecosystems supply both nature and people with fresh water, food, and health.
+      </div>
+    </div>
+    <h1 class="display-3 text-center headings"> Follow me on</h1>
+    <div class="social row p-5">
+      <a href="#" class="col-3 text-center">
+        <i class="fa fa-github icon-3x" aria-hidden="true"></i>
+      </a>
+      <a href="#" class="col-3 text-center">
+        <i class="fa fa-linkedin icon-3x" aria-hidden="true"></i>
+
+      </a>
+      <a href="#" class="col-3 text-center">
+        <i class="fa fa-instagram icon-3x" aria-hidden="true"></i>
+
+      </a>
+      <a href="#" class="col-3 text-center">
+        <i class="fa fa-codepen icon-3x" aria-hidden="true"></i>
+
+      </a>
+    </div>
+
+  <footer class="page-footer font-small blue">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright
+    <a href="#"> MyDoc.com</a>
+    All Rights Reserved.
   </div>
-  <div class="caption">
-  <p>Survey Form</p>
-  </div>
-  </div>
-  <div class="project-tile">
-  <div class="image">
-  <a id="profile-link" href="https://codepen.io/TilokSaha/pen/XQJNoG" target="_blank">
-    <img src="https://user-images.githubusercontent.com/35939367/55471306-1060bf80-5627-11e9-83ba-4d78162788bd.png" alt="pic2">
-  </a>
-  </div>
-  <div class="caption">
-  <p>A simple Webpage</p>
-  </div>
-  </div>
-  <div class="project-tile">
-  <div class="image">
-  <a id="profile-link" href="https://codepen.io/TilokSaha/pen/pYGgzM" target="_blank">
-    <img src="https://user-images.githubusercontent.com/35939367/55471309-1060bf80-5627-11e9-8531-b81dfa4e916d.png" alt="pic3">
-  </a>
-  </div>
-  <div class="caption">
-  <p>Simple animation</p>
-  </div>
-  </div>
-</div>
-<div id="footer">
-  <h1>Follow me on</h1>
-  <a class="circle" target="_blank" href="https://github.com/TilokSaha">Github</a>
-  <a class="circle" target="_blank" href="https://www.linkedin.com/in/tilok-saha-265184172/">LinkedIn</a>
-  <a class="circle" target="_blank" href="https://www.sololearn.com/Profile/5466204">Sololearn</a>
-  <a class="circle" target="_blank" href="https://codepen.io/TilokSaha/">CodePen</a>
-</div>
+  <!-- Copyright -->
+
+</footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
+<script>
+var typed = new Typed(".type", {
+// Waits 1000ms after typing "First"
+strings: ["Wildcats.","Tiger.", "World."],
+smartBackspace: true,
+typeSpeed: 50,
+backSpeed: 50,
+loop:true
+});
+</script>
+<script type="text/javascript" src="script.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </html>
