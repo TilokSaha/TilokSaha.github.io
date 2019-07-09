@@ -60,6 +60,7 @@ footer{
   font-family: jam;
   width: auto;
   overflow: hidden;
+  font-size: 40px!important;
 }
 a{
   color: gray;
